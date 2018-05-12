@@ -31,7 +31,7 @@ public class ApplicationUI extends UI {
 		DateField dateField = new DateField("Current date", LocalDate.now());
 		layout.addComponent(dateField);
 
-		TextField nameInput = new TextField("Your name", "Blazej");
+		TextField nameInput = new TextField("Your name", "Tom");
 		layout.addComponent(nameInput);
 		layout.addComponent(new Button("Push Me!", click -> {
 			Notification.show("Hello " + nameInput.getValue(), "Today is " + dateField.getValue().toString(),
